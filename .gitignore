@@ -1,0 +1,26 @@
+# 临时输出/日志（保留数据文件，排除运行日志）
+*_out.txt
+*_log.txt
+fetch_log.txt
+asr_out.txt
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 系统文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 潜在大模型文件（后续若出现）
+*.onnx
+*.pt
+*.pth
+*.bin
+*.gguf
+
+# 密钥/凭据（防误提交）
+*.pem
+*.key
+.env
