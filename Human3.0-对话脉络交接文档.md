@@ -54,6 +54,7 @@
 | 10/26 | 用户录入 GitHub 仓库 `PMCN-Phoenix/Human3.1.git`（SSH key: id_ed25519）；全部 50 个产物文件已提交推送（commit 08b7f8a）；AGENTS.md 新增「强制规则2：Git同步推送」 | ✅ 完成 |
 | 10/26 | Day1 盘点：申报书已下载（用户）、Git已推送、**架构图v1正式版产出**；发布《大赛Day1-未完成事项执行指引.md》（唯一未完成=用户查「我的参赛」截止日） | ✅ 完成 |
 | 10/26 | **用户回报：大赛报名审核通过**；官方赛程确认（报名9–10/18、比赛10月中下旬–11月上旬、成果发布会11/12）→ 报送按路线图 11/9 执行 | ✅ 完成 |
+| 10/26 | 逐日排期可视化产出（17天时间轴HTML，可浏览器查看） | ✅ 完成 |
 
 ---
 
@@ -160,6 +161,7 @@
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\第七届中国人工智能大赛-报名与备赛准备清单.md` | 报名字段/赛题对比/实现准备 |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\第七届中国人工智能大赛-政务智能体作品路线图.md` | ★当前主线：作品路线图（架构/申报书大纲/视频脚本/17天排期） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\第七届中国人工智能大赛-架构图v1.md` | 架构图正式版（申报书插图+视频素材） |
+| `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\大赛逐日排期-可视化.html` | 17天排期可视化（浏览器打开） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\大赛Day1-未完成事项执行指引.md` | Day1盘点+「查我的参赛」分步指引（唯一未完成=用户查截止日） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\AI竞赛调研_raw\` | 三平台原始调研 |
 
