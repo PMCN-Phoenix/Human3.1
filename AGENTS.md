@@ -20,6 +20,16 @@
 - 本规则在**所有**文件更新后生效，包括交接文档本身被修改时（追加变更记录）
 - 交接文档必须保持**自包含**：新对话只读它即可完整接手
 
+## ★ 强制规则 2：Git 同步（推送 GitHub）
+
+**每次本会话产生或更新任何文件产物后，除同步交接文档外，还必须提交并推送 Git：**
+
+- 远程仓库：`git@github.com:PMCN-Phoenix/Human3.1.git`（origin，分支 main，SSH key：`~/.ssh/id_ed25519`，账号 PMCN-Phoenix）
+- 工作目录即仓库根：`D:\11.project\iwen-dsh\doubao-list\allTest`（.gitignore 已配：排除日志/模型/密钥）
+- 提交规范：`git add -A` → `git commit -m "<type>: <摘要>"`（feat/fix/docs/chore）→ `git push origin main`
+- 与交接文档同步合并执行：**文件更新 → 改交接文档 → 一并 commit → push**
+- 敏感信息禁止入库：cookie/token/密钥（.gitignore 已挡，新增敏感文件先加 ignore）
+
 ## 用户沟通偏好（硬约束）
 
 1. 回复尽量简短、高信息密度、无寒暄
@@ -42,9 +52,15 @@
 - 大赛报名审核状态与「我的参赛」精确报送截止日——待用户确认（决定11/9报送是否够）
 - 是否有队友分担（视频/文稿）——待确认，无队友也按单人排期推进
 
+## Git 状态
+
+- 仓库已初始化并推送：`git@github.com:PMCN-Phoenix/Human3.1.git`（main，50文件，commit 08b7f8a）
+- 规则：每次文件更新 → 改交接文档 → `git add -A && git commit && git push origin main`
+
 ## 变更记录
 
 | 日期 | 变更 |
 |---|---|
 | 2026-10-26 | 创建本文件；建立「每次文件更新同步交接文档」规则 |
 | 2026-10-26 | 用户选定大赛场景 A+D；新增《政务智能体作品路线图.md》；交接文档同步场景状态与排期 |
+| 2026-10-26 | 录入 GitHub 仓库 Human3.1（init+push 50文件）；新增「强制规则2：Git同步推送」 |
