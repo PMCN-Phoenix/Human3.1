@@ -1,0 +1,80 @@
+```html type="renderer"
+<html style="margin:0;padding:0;">
+<title>政务公文起草智能体五层架构</title>
+<div style="width:100%;box-sizing:border-box;font-family:'Microsoft YaHei',system-ui,sans-serif;background:#f6f8fb;padding:18px;border-radius:12px;">
+
+  <!-- 标题 -->
+  <div style="background:linear-gradient(135deg,#0f2a43,#1c4a7a);color:#fff;border-radius:10px;padding:16px 20px;margin-bottom:14px;">
+    <div style="font-size:19px;font-weight:700;">政务公文起草智能体 · 五层系统架构（v1）</div>
+    <div style="font-size:12px;opacity:.9;margin-top:6px;">输入零散材料 → 一键生成 GB/T 9704 规范公文（请示/通知/纪要）→ 格式校验 + 合规自查 → 导出 docx ｜ 私有化部署，数据不出域</div>
+  </div>
+
+  <!-- L1 交互层 -->
+  <div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
+    <div style="font-size:12px;font-weight:700;color:#1565c0;margin-bottom:6px;">L1 交互层 · 前端演示界面</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+      <span style="background:#e8f0fe;color:#0f2a43;font-size:12px;padding:5px 10px;border-radius:6px;">上传材料</span>
+      <span style="font-size:12px;color:#999;">→</span>
+      <span style="background:#e8f0fe;color:#0f2a43;font-size:12px;padding:5px 10px;border-radius:6px;">选择文种</span>
+      <span style="font-size:12px;color:#999;">→</span>
+      <span style="background:#e8f0fe;color:#0f2a43;font-size:12px;padding:5px 10px;border-radius:6px;">一键生成</span>
+      <span style="font-size:12px;color:#999;">→</span>
+      <span style="background:#e8f0fe;color:#0f2a43;font-size:12px;padding:5px 10px;border-radius:6px;">人工修订</span>
+      <span style="font-size:12px;color:#999;">→</span>
+      <span style="background:#e8f0fe;color:#0f2a43;font-size:12px;padding:5px 10px;border-radius:6px;">导出 docx</span>
+      <span style="font-size:11px;color:#90a4ae;margin-left:auto;">对应：演示与答辩 10</span>
+    </div>
+  </div>
+
+  <!-- 箭头 -->
+  <div style="text-align:center;color:#1565c0;font-size:16px;line-height:1;margin:-4px 0 2px;">▼</div>
+
+  <!-- L2 智能层 -->
+  <div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:3px solid #e65100;">
+    <div style="font-size:12px;font-weight:700;color:#e65100;margin-bottom:6px;">L2 智能层 · Agent 六步工作流（核心）</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:stretch;">
+      <div style="flex:1;min-width:110px;background:#fff3e0;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#4e342e;"><b>① 文种识别</b><div style="font-size:10px;color:#8d6e63;margin-top:2px;">请示/通知/纪要</div></div>
+      <div style="flex:1;min-width:110px;background:#fff3e0;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#4e342e;"><b>② RAG 检索</b><div style="font-size:10px;color:#8d6e63;margin-top:2px;">检索相关政策素材</div></div>
+      <div style="flex:1;min-width:110px;background:#fff3e0;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#4e342e;"><b>③ 起草初稿</b><div style="font-size:10px;color:#8d6e63;margin-top:2px;">LLM 生成正文</div></div>
+      <div style="flex:1;min-width:110px;background:#fff3e0;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#4e342e;"><b>④ 格式校验</b><div style="font-size:10px;color:#8d6e63;margin-top:2px;">GB/T 9704 要素级</div></div>
+      <div style="flex:1;min-width:110px;background:#fff3e0;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#4e342e;"><b>⑤ 合规自查</b><div style="font-size:10px;color:#8d6e63;margin-top:2px;">敏感词/涉密提醒</div></div>
+      <div style="flex:1;min-width:110px;background:#e65100;border-radius:6px;padding:8px 6px;text-align:center;font-size:12px;color:#fff;"><b>⑥ 标准公文</b><div style="font-size:10px;opacity:.85;margin-top:2px;">python-docx 导出</div></div>
+    </div>
+    <div style="font-size:11px;color:#90a4ae;margin-top:6px;text-align:right;">对应：技术创新 20 ｜ ★ 创新点：格式即规则、合规前置（⑤在⑥之前，非事后过滤）</div>
+  </div>
+
+  <!-- 箭头 -->
+  <div style="text-align:center;color:#e65100;font-size:16px;line-height:1;margin:-4px 0 2px;">▼</div>
+
+  <!-- L3 双分支 -->
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+    <div style="flex:1;min-width:280px;background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:3px solid #2e7d32;">
+      <div style="font-size:12px;font-weight:700;color:#2e7d32;margin-bottom:6px;">L3 知识层 · RAG 向量库（本地）</div>
+      <div style="font-size:12px;color:#37474f;line-height:1.9;">· 本单位公文模板库<br>· 政策文件 / 办文规范<br>· 历史请示 / 通知 / 纪要样例</div>
+    </div>
+    <div style="flex:1;min-width:280px;background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:3px solid #6a1b9a;">
+      <div style="font-size:12px;font-weight:700;color:#6a1b9a;margin-bottom:6px;">L3 规则层 · 规则引擎（本地）</div>
+      <div style="font-size:12px;color:#37474f;line-height:1.9;">· GB/T 9704 格式校验规则<br>· 敏感词表 / 规范表述清单<br>· 涉密信息识别规则</div>
+      <div style="font-size:11px;color:#90a4ae;margin-top:2px;">独立于模型，可审计 ｜ 对应：技术方案 25 + 场景适配 25</div>
+    </div>
+  </div>
+
+  <!-- 箭头 -->
+  <div style="text-align:center;color:#6a1b9a;font-size:16px;line-height:1;margin:-4px 0 2px;">▼</div>
+
+  <!-- L4 模型层 -->
+  <div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:3px solid #37474f;">
+    <div style="font-size:12px;font-weight:700;color:#37474f;margin-bottom:6px;">L4 模型层 · 大模型推理引擎</div>
+    <div style="font-size:12px;color:#37474f;line-height:1.8;">私有化部署 / API 调用 ｜ 数据不出域 ｜ ★ 创新点：<b>私有化 = 合规</b>（正面回应政务信息安全底线）</div>
+    <div style="font-size:11px;color:#90a4ae;margin-top:4px;">对应：应用成效 20</div>
+  </div>
+
+  <!-- 底部总结 -->
+  <div style="background:#263238;color:#fff;border-radius:10px;padding:12px 16px;">
+    <div style="font-size:13px;font-weight:700;margin-bottom:6px;">一句话讲给评委</div>
+    <div style="font-size:12px;line-height:1.7;opacity:.95;">办文员上传零散材料 → 系统识别文种并检索本单位规范库 → 起草符合格式的初稿 → 机器校验格式与合规 → 一键导出规范公文。<b>全程材料不离开单位内部部署环境。</b></div>
+  </div>
+
+</div>
+</html>
+```
