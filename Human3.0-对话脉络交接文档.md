@@ -56,6 +56,7 @@
 | 10/26 | **用户回报：大赛报名审核通过**；官方赛程确认（报名9–10/18、比赛10月中下旬–11月上旬、成果发布会11/12）→ 报送按路线图 11/9 执行 | ✅ 完成 |
 | 10/26 | 逐日排期可视化产出（17天时间轴HTML，可浏览器查看） | ✅ 完成 |
 | 10/26 | 架构图v1可视化产出（5层架构HTML，申报书插图+视频素材可直接复用） | ✅ 完成 |
+| 10/26 | 大赛深学地图产出（每日L1/L2+底层架构主线+2026政务AI政策/竞品弹药）；发现竞品：人民网写易AI/新华睿思 | ✅ 完成 |
 
 ---
 
@@ -164,6 +165,7 @@
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\第七届中国人工智能大赛-架构图v1.md` | 架构图正式版（申报书插图+视频素材） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\大赛逐日排期-可视化.html` | 17天排期可视化（浏览器打开） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\架构图v1-可视化.html` | 架构图可视化（5层架构，申报书插图/视频素材） |
+| `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\大赛深学地图-每日两层与底层架构.md` | 深学地图：每日L1/L2、底层架构主线、2026政务AI政策与竞品弹药 |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\大赛Day1-未完成事项执行指引.md` | Day1盘点+「查我的参赛」分步指引（唯一未完成=用户查截止日） |
 | `D:\11.project\iwen-dsh\doubao-list\allTest\Human3.0\AI竞赛调研_raw\` | 三平台原始调研 |
 
